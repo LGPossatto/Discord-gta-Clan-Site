@@ -6,6 +6,7 @@
 }
 
 body{
+    max-width: 1920px;
     width: 100vw;
     overflow-x: hidden;
 
@@ -24,7 +25,7 @@ ul {
 button{
     cursor: pointer;
     background-color: $c-dark;
-    padding: 0.25em 2.5em;
+    padding: 0.25em 2.75em;
 
     border: 5px solid $c-highlight;
     border-radius: 2em;
@@ -32,6 +33,10 @@ button{
     font-size: 2.2rem;
     letter-spacing: 0.1em;
     color: $c-light;
+}
+
+.btn-mod{
+    border-color: $c-dark;
 }
 
 .container{
@@ -51,8 +56,17 @@ button{
     align-items: center;
 }
 
+.flex-aic{
+    display: flex;
+    align-items: center;
+}
+
 .flex-aic-fdc{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.flex-jcc{
+    justify-content: center;
 }

@@ -1,0 +1,82 @@
+// --------------------------------------------------------------
+// ABOUT SECTION ------------------------------------------------
+// --------------------------------------------------------------
+
+.about{
+    padding: 150px;
+
+    img{
+        width: 785px;
+        border-radius: 45px;
+    }
+
+    &__txt{
+
+        h2, p{
+            padding: 0 5rem 2.75rem;
+            color: $c-dark;
+            letter-spacing: 0.1em;
+            line-height: 1.1;
+        }
+        
+        h2{
+            padding-bottom: 2.75rem;
+            font-weight: normal;
+            font-size: 3.6rem;
+        }
+
+        p{
+            font-size: 2.2rem;
+        }
+    }
+}
+
+.invert-section{
+    background-color: $c-dark;
+    text-align: right;
+
+    h2, p{
+        color: $c-light;
+    }
+
+    a{
+        color: $c-highlight;
+    }
+}
+
+// --------------------------------------------------------------
+// TESTIMONIAL SECTION ------------------------------------------
+// --------------------------------------------------------------
+
+.testimonial{
+
+    img{
+        margin: 245px 0;
+        border-radius: 50%;
+    }
+
+    &__txt{
+        padding-left: 2rem;
+
+        p{
+            letter-spacing: 0.1em;
+            line-height: 1.1;
+            padding-bottom: 1.5rem;
+            color: $c-dark;
+        }
+        
+        :first-child{
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+
+        :nth-child(2){
+            font-size: 1.8rem;
+        }
+
+        :last-child{
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+    }
+}
