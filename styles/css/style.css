@@ -55,20 +55,17 @@ button {
           align-items: center;
 }
 
-.flex-jcc-aic-fdc {
+.flex-aic-fdc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__nav {
@@ -87,6 +84,7 @@ button {
 }
 
 .header__hero {
+  background-color: #111111;
   background-image: url(/images/index-imgs/hero-img-b.png);
   background-size: cover;
   background-position: center center;
@@ -111,12 +109,13 @@ button {
 }
 
 .header__hero .hero-txt h1 {
+  margin-top: 25%;
   font-size: 4.8rem;
   font-weight: 700;
 }
 
 .header__hero .hero-txt h2 {
-  padding: 3rem 0;
+  padding: 2.75rem 0 3rem;
   font-size: 3.6rem;
   line-height: 1.1;
   text-align: center;

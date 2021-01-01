@@ -24,6 +24,7 @@
     }
 
     &__hero{
+        background-color: $c-dark;
         background-image: url(/images/index-imgs/hero-img-b.png);
         background-size: cover;
         background-position: center center;
@@ -32,7 +33,7 @@
         width: 100%;
         height: calc(100vh - 75px);
         
-        border-bottom: 5px solid $c-dark;;
+        border-bottom: 5px solid $c-dark;
 
         .hero-txt{
             background-color: rgba($c-dark, 0.5);
@@ -46,12 +47,13 @@
             }
             
             h1{
+                margin-top: 25%;
                 font-size: 4.8rem;
                 font-weight: 700;
             }
             
             h2{
-                padding: 3rem 0;
+                padding: 2.75rem 0 3rem;
 
                 font-size: 3.6rem;
                 line-height: 1.1;
