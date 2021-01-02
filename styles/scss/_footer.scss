@@ -1,9 +1,9 @@
 .footer{
 
     &__cta{
-        background-color: $c-highlight;
-        height: 665px;
-    
+        background-color: $c-highlight;   
+        padding-top: 10%;
+        padding-bottom: 10%; 
         border-top: 5px solid $c-dark;
         
         :first-child{
@@ -13,7 +13,7 @@
         h2{
             padding-bottom: 2.5rem;
             color: $c-dark;
-            font-size: 3.6rem;
+            text-align: center;
 
             a{
                 color: $c-light;

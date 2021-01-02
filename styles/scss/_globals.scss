@@ -5,10 +5,13 @@
     font-family: 'Teko', sans-serif;
 }
 
-body{
-    max-width: 1920px;
-    width: 100vw;
+html, body{
     overflow-x: hidden;
+}
+
+body{
+    position: relative;
+    width: 100vw;
 
     font-size:62.5%;
     color: $c-dark;
@@ -22,6 +25,10 @@ ul {
     list-style: none;
 }
 
+// --------------------------------------------------------------
+// BUTTONS ------------------------------------------------------
+// --------------------------------------------------------------
+
 button{
     cursor: pointer;
     background-color: $c-dark;
@@ -30,7 +37,6 @@ button{
     border: 5px solid $c-highlight;
     border-radius: 2em;
 
-    font-size: 2.2rem;
     letter-spacing: 0.1em;
     color: $c-light;
 }
@@ -39,14 +45,152 @@ button{
     border-color: $c-dark;
 }
 
+@media screen and (max-width: 1600px){
+    button{    
+        font-size: 1.8rem;
+    }
+}
+
+// --------------------------------------------------------------
+// FONT-SIZE ----------------------------------------------------
+// --------------------------------------------------------------
+
+.fs{
+
+    &-bigger{
+        font-size: 4.8rem;
+    }
+
+    &-big{
+        font-size: 3.6rem;
+    }
+    
+    &-med{
+        font-size: 2.2rem;
+    }
+    
+    &-small{
+        font-size: 1.8rem;
+    }
+    
+    &-smaller{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 1600px){
+    .fs{
+
+        &-bigger{
+            font-size: 3.6rem;
+        }
+    
+        &-big{
+            font-size: 2.8rem;
+        }
+        
+        &-med{
+            font-size: 1.8rem;
+        }
+        
+        &-small{
+            font-size: 1.6rem;
+        }
+        
+        &-smaller{
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1350px){
+    .fs{
+
+        &-bigger{
+            font-size: 2.8rem;
+        }
+    
+        &-big{
+            font-size: 2.2rem;
+        }
+        
+        &-med{
+            font-size: 1.6rem;
+        }
+        
+        &-small{
+            font-size: 1.4rem;
+        }
+        
+        &-smaller{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1175px){
+    .fs{
+
+        &-bigger{
+            font-size: 2.2rem;
+        }
+    
+        &-big{
+            font-size: 1.8rem;
+        }
+        
+        &-med{
+            font-size: 1.4rem;
+        }
+        
+        &-small{
+            font-size: 1.2rem;
+        }
+        
+        &-smaller{
+            font-size: 1.0rem;
+        }
+    }
+}
+
+@media screen and (max-width: 700px){
+    .fs{
+
+        &-bigger{
+            font-size: 2.0rem;
+        }
+    
+        &-big{
+            font-size: 1.4rem;
+        }
+        
+        &-med{
+            font-size: 1.0rem;
+        }
+        
+        &-small{
+            font-size: 0.8rem;
+        }
+        
+        &-smaller{
+            font-size: 0.6rem;
+        }
+    }
+}
+
+// --------------------------------------------------------------
+// CONTAINERS ------------------------------------------------------
+// --------------------------------------------------------------
+
 .container{
     padding-left: 8.5%;
     padding-right: 8.5%;
+}
 
-    &-hgt{
-        padding-left: 8.5%;
-        padding-right: 8.5%;
-        height: 100%;
+@media screen and (max-width: 975px){
+    .container{
+        padding-left: 2.5%;
+        padding-right: 2.5%;
     }
 }
 
