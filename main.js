@@ -6,15 +6,30 @@ burgBtn.addEventListener('click', () => {
     _header.classList.toggle('btn-active');
 })
 
+
+let didScroll = false;
+const didScrollFunc = () => {
+  didScroll = true
+}
+
 let prevScrollpos = window.pageYOffset;
-window.addEventListener('scroll', () => {
+const moveNavBar = () => {
   let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.querySelector("#navbar").style.top = "0";
+    document.querySelector("#navbar").classList.remove('nav-animation');
   } else {
-      if (!_header.classList.contains('btn-active')){
-          document.querySelector("#navbar").style.top = "-75px";
-      }
-  }
+    if (!_header.classList.contains('btn-active') && currentScrollPos >= 75){
+      document.querySelector("#navbar").classList.add('nav-animation');
+    }
+  }  
   prevScrollpos = currentScrollPos;
-})
+}
+
+setInterval(() => {
+  if (didScroll && window.innerWidth <= 550) {
+    moveNavBar();
+    didScroll = false;
+  }
+}, 333)
+
+window.addEventListener('scroll', didScrollFunc);
