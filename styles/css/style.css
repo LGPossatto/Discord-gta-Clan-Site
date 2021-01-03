@@ -167,15 +167,6 @@ button {
           align-items: center;
 }
 
-.flex-aic {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .flex-aic-fdc {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -184,6 +175,15 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-aic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -348,11 +348,10 @@ button {
   .header__burg {
     display: block;
   }
-}
-
-.nav-animation {
-  -webkit-transform: translateY(-75px);
-          transform: translateY(-75px);
+  .nav-animation {
+    -webkit-transform: translateY(-75px);
+            transform: translateY(-75px);
+  }
 }
 
 .about {
@@ -542,48 +541,98 @@ button {
   background-size: cover;
 }
 
+.gallery__grid div:hover {
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+  -webkit-box-shadow: 0 0 10px rgba(17, 17, 17, 0.5);
+          box-shadow: 0 0 10px rgba(17, 17, 17, 0.5);
+}
+
+.gallery__show-img {
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  background-color: rgba(17, 17, 17, 0.5);
+  width: 100vw;
+  height: 100vh;
+}
+
+.gallery__show-img .img-display {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 85%;
+  max-height: 85%;
+  border: 5px solid #fdfc02;
+}
+
+.gallery__show-img .btn-l, .gallery__show-img .btn-r {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  background-color: #fdfc02;
+  width: 50px;
+  height: 75px;
+  margin: 25px;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.gallery__show-img .btn-l:hover, .gallery__show-img .btn-r:hover {
+  background-color: #fefefe;
+}
+
+.gallery__show-img .btn-l {
+  left: 0;
+}
+
+.gallery__show-img .btn-r {
+  right: 0;
+}
+
+.gallery__show-img .arrow-c {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fdfc02;
+  width: 75px;
+  height: 75px;
+  font-size: 50px;
+  line-height: 75px;
+  text-align: center;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.gallery__show-img .arrow-c:hover {
+  background-color: #fefefe;
+}
+
+@media screen and (max-width: 550px) {
+  .gallery {
+    padding-top: 75px;
+  }
+  .btn-l, .btn-r {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 650px) {
-  .card-big {
-    grid-row: span 2 / auto;
+  .card-wide {
     grid-column: span 2 / auto;
   }
-  .card-big:hover {
-    width: 526px;
-    height: 526px;
-    -webkit-transform: translate(-5px, -5px);
-            transform: translate(-5px, -5px);
-    -webkit-box-shadow: 0 0 5px -1px #111111;
-            box-shadow: 0 0 5px -1px #111111;
-  }
-  .card-small:hover {
-    width: 260px;
-    height: 260px;
-    -webkit-transform: translate(-5px, -5px);
-            transform: translate(-5px, -5px);
-    -webkit-box-shadow: 0 0 5px -1px #111111;
-            box-shadow: 0 0 5px -1px #111111;
+  .card-small {
+    grid-row: span 1 / auto;
   }
   .card-tall {
     grid-row: span 2 / auto;
   }
-  .card-tall:hover {
-    width: 260px;
-    height: 526px;
-    -webkit-transform: translate(-5px, -5px);
-            transform: translate(-5px, -5px);
-    -webkit-box-shadow: 0 0 5px -1px #111111;
-            box-shadow: 0 0 5px -1px #111111;
-  }
-  .card-wide {
+  .card-big {
+    grid-row: span 2 / auto;
     grid-column: span 2 / auto;
-  }
-  .card-wide:hover {
-    width: 526px;
-    height: 260px;
-    -webkit-transform: translate(-5px, -5px);
-            transform: translate(-5px, -5px);
-    -webkit-box-shadow: 0 0 5px -1px #111111;
-            box-shadow: 0 0 5px -1px #111111;
   }
 }
 
