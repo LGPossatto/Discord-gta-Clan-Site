@@ -508,4 +508,103 @@ button {
   width: 100%;
   height: 75px;
 }
+
+.gallery h1, .gallery p {
+  letter-spacing: 0.1em;
+}
+
+.gallery h1 {
+  padding-top: 5%;
+}
+
+.gallery p {
+  text-align: center;
+  padding: 0 0 2.5%;
+  line-height: 1;
+}
+
+.gallery__grid {
+  padding-bottom: 5%;
+  max-width: 1750px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  grid-auto-rows: 250px;
+}
+
+.gallery__grid div {
+  cursor: pointer;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 650px) {
+  .card-big {
+    grid-row: span 2 / auto;
+    grid-column: span 2 / auto;
+  }
+  .card-big:hover {
+    width: 526px;
+    height: 526px;
+    -webkit-transform: translate(-5px, -5px);
+            transform: translate(-5px, -5px);
+    -webkit-box-shadow: 0 0 5px -1px #111111;
+            box-shadow: 0 0 5px -1px #111111;
+  }
+  .card-small:hover {
+    width: 260px;
+    height: 260px;
+    -webkit-transform: translate(-5px, -5px);
+            transform: translate(-5px, -5px);
+    -webkit-box-shadow: 0 0 5px -1px #111111;
+            box-shadow: 0 0 5px -1px #111111;
+  }
+  .card-tall {
+    grid-row: span 2 / auto;
+  }
+  .card-tall:hover {
+    width: 260px;
+    height: 526px;
+    -webkit-transform: translate(-5px, -5px);
+            transform: translate(-5px, -5px);
+    -webkit-box-shadow: 0 0 5px -1px #111111;
+            box-shadow: 0 0 5px -1px #111111;
+  }
+  .card-wide {
+    grid-column: span 2 / auto;
+  }
+  .card-wide:hover {
+    width: 526px;
+    height: 260px;
+    -webkit-transform: translate(-5px, -5px);
+            transform: translate(-5px, -5px);
+    -webkit-box-shadow: 0 0 5px -1px #111111;
+            box-shadow: 0 0 5px -1px #111111;
+  }
+}
+
+@media screen and (min-width: 1551px) {
+  .gallery__grid {
+    -ms-grid-columns: (15.5%)[auto-fit];
+        grid-template-columns: repeat(auto-fit, 15.5%);
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .gallery__grid {
+    -ms-grid-columns: (23%)[auto-fit];
+        grid-template-columns: repeat(auto-fit, 23%);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .gallery__grid {
+    -ms-grid-columns: (100%)[auto-fit];
+        grid-template-columns: repeat(auto-fit, 100%);
+  }
+}
 /*# sourceMappingURL=style.css.map */

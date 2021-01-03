@@ -1,0 +1,111 @@
+.gallery{
+
+    h1, p{
+        letter-spacing: 0.1em;
+    }
+
+    h1{
+        padding-top: 5%;
+    }
+
+    p{
+        text-align: center;
+        padding: 0 0 2.5%;
+        line-height: 1;
+    }
+
+    &__grid{
+        padding-bottom: 5%;
+        max-width: 1750px;
+        width: 100%;
+        
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: auto;
+        grid-auto-rows: 250px;
+        
+        div{
+            cursor: pointer;
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+@media screen and (min-width: 650px){
+    .card-big{
+        grid-row: span 2 / auto;
+        grid-column: span 2 / auto;
+        
+        &:hover{
+            width: 526px;
+            height: 526px;
+            
+            transform: translate(-5px, -5px);
+            box-shadow: 0 0 5px -1px $c-dark;
+        } 
+    }
+    
+    .card-small{
+        
+        &:hover{
+            width: 260px;
+            height: 260px;
+            
+            transform: translate(-5px, -5px);
+            box-shadow: 0 0 5px -1px $c-dark;
+        } 
+    }
+    
+    .card-tall{
+        grid-row: span 2 / auto;
+        
+        &:hover{
+            width: 260px;
+            height: 526px;
+            
+            transform: translate(-5px, -5px);
+            box-shadow: 0 0 5px -1px $c-dark;
+        } 
+    }
+    
+    .card-wide{
+        grid-column: span 2 / auto;
+        
+        &:hover{
+            width: 526px;
+            height: 260px;
+            
+            transform: translate(-5px, -5px);
+            box-shadow: 0 0 5px -1px $c-dark;
+        } 
+    }
+}
+
+@media screen and (min-width: 1551px){
+    .gallery{
+            
+        &__grid{
+            grid-template-columns: repeat(auto-fit, 15.5%);
+        }
+    }
+}
+
+@media screen and (max-width: 1550px){
+    .gallery{
+        
+        &__grid{
+            grid-template-columns: repeat(auto-fit, 23%);
+        }
+    }
+}
+
+@media screen and (max-width: 650px){
+    .gallery{
+        
+        &__grid{
+            grid-template-columns: repeat(auto-fit, 100%);
+        }
+    }
+}
