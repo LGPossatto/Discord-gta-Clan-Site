@@ -35,3 +35,9 @@ setInterval(() => {
 }, 333);
 
 window.addEventListener("scroll", didScrollFunc);
+
+// handle img change
+(() => {
+  document.querySelector("#hero-img").style.backgroundImage =
+    "url(/images/index-imgs/hero-img-b.png)";
+})();

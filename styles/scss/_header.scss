@@ -55,11 +55,12 @@
 
   &__hero {
     background-color: $c-dark;
-    background-image: url(/images/index-imgs/hero-img-b.png);
+    background-image: url(/images/index-imgs/hero-img-low.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 
+    top: 75px;
     width: 100%;
     height: calc(100vh - 75px);
 
