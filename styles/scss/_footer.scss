@@ -1,30 +1,29 @@
-.footer{
+.footer {
+  &__cta {
+    background-color: $c-highlight;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-top: 5px solid $c-dark;
 
-    &__cta{
-        background-color: $c-highlight;   
-        padding-top: 10%;
-        padding-bottom: 10%; 
-        border-top: 5px solid $c-dark;
-        
-        :first-child{
-            padding-bottom: 0;
-        }
-
-        h2{
-            padding-bottom: 2.5rem;
-            color: $c-dark;
-            text-align: center;
-
-            a{
-                color: $c-light;
-                text-shadow: 0 0 5px $c-dark;
-            }
-        }
+    :first-child {
+      padding-bottom: 0;
     }
 
-    &__bar{
-        background-color: $c-dark;
-        width: 100%;
-        height: 75px;
+    h2 {
+      padding-bottom: 2.5rem;
+      color: $c-dark;
+      text-align: center;
+
+      a {
+        color: $c-light;
+        text-shadow: 0 0 5px $c-dark;
+      }
     }
+  }
+
+  &__bar {
+    background-color: $c-dark;
+    width: 100%;
+    height: 75px;
+  }
 }

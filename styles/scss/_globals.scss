@@ -1,222 +1,233 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Teko', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Teko", sans-serif;
 }
 
-html, body{
-    overflow-x: hidden;
+html,
+body {
+  overflow-x: hidden;
 }
 
-body{
-    position: relative;
-    width: 100vw;
+body {
+  position: relative;
+  width: 100vw;
 
-    font-size:62.5%;
-    color: $c-dark;
+  font-size: 62.5%;
+  color: $c-dark;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
+  color: $c-light;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
+}
+
+.lock-screen {
+  overflow-y: hidden;
+}
+
+.err-spc {
+  margin-top: 1.75rem;
 }
 
 // --------------------------------------------------------------
 // BUTTONS ------------------------------------------------------
 // --------------------------------------------------------------
 
-button{
-    cursor: pointer;
-    background-color: $c-dark;
-    padding: 0.25em 2.75em;
+button,
+.button {
+  cursor: pointer;
+  background-color: $c-dark;
+  padding: 0.25em 2.75em;
 
-    border: 5px solid $c-highlight;
-    border-radius: 2em;
+  border: 5px solid $c-highlight;
+  border-radius: 2em;
 
-    letter-spacing: 0.1em;
-    color: $c-light;
+  letter-spacing: 0.1em;
+  color: $c-light;
 }
 
-.btn-mod{
-    border-color: $c-dark;
+.btn-mod {
+  border-color: $c-dark;
 }
 
-@media screen and (max-width: 1600px){
-    button{    
-        font-size: 1.8rem;
-    }
+@media screen and (max-width: 1600px) {
+  button {
+    font-size: 1.8rem;
+  }
 }
 
-@media screen and (max-width: 550px){
-    button{    
-        border-width: 3px;
-    }
+@media screen and (max-width: 550px) {
+  button {
+    border-width: 3px;
+  }
 }
 
 // --------------------------------------------------------------
 // FONT-SIZE ----------------------------------------------------
 // --------------------------------------------------------------
 
-.fs{
+.fs {
+  &-bigger {
+    font-size: 4.8rem;
+  }
 
-    &-bigger{
-        font-size: 4.8rem;
-    }
+  &-big {
+    font-size: 3.6rem;
+  }
 
-    &-big{
-        font-size: 3.6rem;
-    }
-    
-    &-med{
-        font-size: 2.2rem;
-    }
-    
-    &-small{
-        font-size: 1.8rem;
-    }
-    
-    &-smaller{
-        font-size: 1.6rem;
-    }
+  &-med {
+    font-size: 2.2rem;
+  }
+
+  &-small {
+    font-size: 1.8rem;
+  }
+
+  &-smaller {
+    font-size: 1.6rem;
+  }
 }
 
-@media screen and (max-width: 1600px){
-    .fs{
-
-        &-bigger{
-            font-size: 3.6rem;
-        }
-    
-        &-big{
-            font-size: 2.8rem;
-        }
-        
-        &-med{
-            font-size: 1.8rem;
-        }
-        
-        &-small{
-            font-size: 1.6rem;
-        }
-        
-        &-smaller{
-            font-size: 1.4rem;
-        }
+@media screen and (max-width: 1600px) {
+  .fs {
+    &-bigger {
+      font-size: 3.6rem;
     }
+
+    &-big {
+      font-size: 2.8rem;
+    }
+
+    &-med {
+      font-size: 1.8rem;
+    }
+
+    &-small {
+      font-size: 1.6rem;
+    }
+
+    &-smaller {
+      font-size: 1.4rem;
+    }
+  }
 }
 
-@media screen and (max-width: 1350px){
-    .fs{
-
-        &-bigger{
-            font-size: 2.8rem;
-        }
-    
-        &-big{
-            font-size: 2.2rem;
-        }
-        
-        &-med{
-            font-size: 1.6rem;
-        }
-        
-        &-small{
-            font-size: 1.4rem;
-        }
-        
-        &-smaller{
-            font-size: 1.2rem;
-        }
+@media screen and (max-width: 1350px) {
+  .fs {
+    &-bigger {
+      font-size: 2.8rem;
     }
+
+    &-big {
+      font-size: 2.2rem;
+    }
+
+    &-med {
+      font-size: 1.6rem;
+    }
+
+    &-small {
+      font-size: 1.4rem;
+    }
+
+    &-smaller {
+      font-size: 1.2rem;
+    }
+  }
 }
 
-@media screen and (max-width: 1175px){
-    .fs{
-
-        &-bigger{
-            font-size: 2.2rem;
-        }
-    
-        &-big{
-            font-size: 1.8rem;
-        }
-        
-        &-med{
-            font-size: 1.4rem;
-        }
-        
-        &-small{
-            font-size: 1.2rem;
-        }
-        
-        &-smaller{
-            font-size: 1.0rem;
-        }
+@media screen and (max-width: 1175px) {
+  .fs {
+    &-bigger {
+      font-size: 2.2rem;
     }
+
+    &-big {
+      font-size: 1.8rem;
+    }
+
+    &-med {
+      font-size: 1.4rem;
+    }
+
+    &-small {
+      font-size: 1.2rem;
+    }
+
+    &-smaller {
+      font-size: 1rem;
+    }
+  }
 }
 
-@media screen and (max-width: 700px){
-    .fs{
-
-        &-bigger{
-            font-size: 2.0rem;
-        }
-    
-        &-big{
-            font-size: 1.4rem;
-        }
-        
-        &-med{
-            font-size: 1.0rem;
-        }
-        
-        &-small{
-            font-size: 0.8rem;
-        }
-        
-        &-smaller{
-            font-size: 0.6rem;
-        }
+@media screen and (max-width: 700px) {
+  .fs {
+    &-bigger {
+      font-size: 2rem;
     }
+
+    &-big {
+      font-size: 1.4rem;
+    }
+
+    &-med {
+      font-size: 1rem;
+    }
+
+    &-small {
+      font-size: 0.8rem;
+    }
+
+    &-smaller {
+      font-size: 0.6rem;
+    }
+  }
 }
 
 // --------------------------------------------------------------
 // CONTAINERS ------------------------------------------------------
 // --------------------------------------------------------------
 
-.container{
-    padding-left: 8.5%;
-    padding-right: 8.5%;
+.container {
+  padding-left: 8.5%;
+  padding-right: 8.5%;
 }
 
-@media screen and (max-width: 975px){
-    .container{
-        padding-left: 2.5%;
-        padding-right: 2.5%;
-    }
+@media screen and (max-width: 975px) {
+  .container {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
 }
 
-.flex-jcsb-aic{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.flex-jcsb-aic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.flex-aic-fdc{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.flex-aic-fdc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.flex-aic{
-    display: flex;
-    align-items: center;
+.flex-aic {
+  display: flex;
+  align-items: center;
 }
 
-.flex-jcc{
-    justify-content: center;
+.flex-jcc {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-1 {
+  flex: 1;
 }

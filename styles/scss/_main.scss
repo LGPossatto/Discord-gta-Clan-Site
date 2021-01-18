@@ -2,161 +2,157 @@
 // ABOUT SECTION ------------------------------------------------
 // --------------------------------------------------------------
 
-.about{
-    padding-top: 10%;
-    padding-bottom: 10%;
+.about {
+  padding-top: 10%;
+  padding-bottom: 10%;
 
-    img{
-        max-width: 785px;
-        width: 45%;
-        border-radius: 2em;
+  img {
+    max-width: 785px;
+    width: 45%;
+    border-radius: 1em;
+  }
+
+  &__txt {
+    h2,
+    p {
+      padding: 0 5rem 2.75rem;
+      color: $c-dark;
+      letter-spacing: 0.1em;
+      line-height: 1.1;
     }
 
-    &__txt{
-
-        h2, p{
-            padding: 0 5rem 2.75rem;
-            color: $c-dark;
-            letter-spacing: 0.1em;
-            line-height: 1.1;
-        }
-        
-        h2{
-            font-weight: normal;
-        }
-
-        p{
-        }
+    h2 {
+      font-weight: normal;
     }
+
+    p {
+    }
+  }
 }
 
-.invert-section{
-    background-color: $c-dark;
-    text-align: right;
+.invert-section {
+  background-color: $c-dark;
+  text-align: right;
 
-    h2, p{
-        color: $c-light;
-    }
+  h2,
+  p {
+    color: $c-light;
+  }
 
-    a{
-        color: $c-highlight;
-    }
+  a {
+    color: $c-highlight;
+  }
 }
 
-@media screen and (max-width: 1350px){
-    .about{
-
-        &__txt{
-    
-            h2, p{
-                padding: 0 2rem 1.25rem;
-            }
-        }
+@media screen and (max-width: 1350px) {
+  .about {
+    &__txt {
+      h2,
+      p {
+        padding: 0 2rem 1.25rem;
+      }
     }
+  }
 }
 
-@media screen and (max-width: 550px){
-    .about{
-        flex-direction: column;
-        text-align: center;
+@media screen and (max-width: 550px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
 
-        :last-child{
-            flex-direction: column-reverse;
-        }
-
-        img{
-            width: 80%;
-        }
-
-        &__txt{
-
-            h2{
-                padding-top: 2rem;
-            }
-        }
+    :last-child {
+      flex-direction: column-reverse;
     }
+
+    img {
+      width: 80%;
+    }
+
+    &__txt {
+      h2 {
+        padding-top: 2rem;
+      }
+    }
+  }
 }
 
 // --------------------------------------------------------------
 // TESTIMONIAL SECTION ------------------------------------------
 // --------------------------------------------------------------
 
-.testimonial{
+.testimonial {
+  &__box {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
 
-    &__box{
-        padding-top: 10%;
-        padding-bottom: 10%; 
+  img {
+    border-radius: 50%;
+  }
+
+  &__txt {
+    padding-left: 2rem;
+    padding-right: 1rem;
+
+    p {
+      letter-spacing: 0.1em;
+      line-height: 1.1;
+      padding-bottom: 1.5rem;
+      color: $c-dark;
     }
 
-    img{
-        border-radius: 50%;
+    :first-child,
+    :last-child {
+      font-weight: 700;
     }
-
-    &__txt{
-        padding-left: 2rem;
-        padding-right: 1rem;
-
-        p{
-            letter-spacing: 0.1em;
-            line-height: 1.1;
-            padding-bottom: 1.5rem;
-            color: $c-dark;
-        }
-        
-        :first-child, :last-child{
-            font-weight: 700;
-        }
-    }
+  }
 }
 
-@media screen and (max-width: 1600px){
-    .testimonial{
-
-        img{
-            width: 200px;
-        }
+@media screen and (max-width: 1600px) {
+  .testimonial {
+    img {
+      width: 200px;
     }
+  }
 }
 
-@media screen and (max-width: 1175px){
-    .testimonial{
-
-        img{
-            width: 150px;
-        }
+@media screen and (max-width: 1175px) {
+  .testimonial {
+    img {
+      width: 150px;
     }
+  }
 }
 
-@media screen and (max-width: 975px){
-    .testimonial{
-        flex-wrap: wrap;
+@media screen and (max-width: 975px) {
+  .testimonial {
+    flex-wrap: wrap;
 
-        &__box{
-            &:first-child{
-                padding-bottom: 2.5%;
-            }
-    
-            &:last-child{
-                padding-top: 2.5%;
-            }
-        }
+    &__box {
+      &:first-child {
+        padding-bottom: 2.5%;
+      }
+
+      &:last-child {
+        padding-top: 2.5%;
+      }
     }
+  }
 }
 
-@media screen and (max-width: 375px){
-    .testimonial{
-
-        img{
-            width: 100px;
-        }
-
-        &__txt{
-            padding-left: 1rem;
-            padding-right: 0;
-    
-            p{
-                padding-bottom: 0.5rem;
-            }
-        }
+@media screen and (max-width: 375px) {
+  .testimonial {
+    img {
+      width: 100px;
     }
+
+    &__txt {
+      padding-left: 1rem;
+      padding-right: 0;
+
+      p {
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
 }
