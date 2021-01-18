@@ -4,7 +4,7 @@
     width: 100%;
     height: 75px;
 
-    border-bottom: 5px solid $c-highlight;
+    border-bottom: 3px solid $c-highlight;
     transition: transform 0.5s ease-in-out;
   }
 
@@ -63,12 +63,13 @@
     width: 100%;
     height: calc(100vh - 75px);
 
-    border-bottom: 5px solid $c-dark;
+    border-bottom: 3px solid $c-dark;
 
     .hero-txt {
       background-color: rgba($c-dark, 0.5);
       width: fit-content;
       height: 100%;
+      margin-left: 5.5%;
 
       h1,
       h2 {
@@ -97,6 +98,10 @@
     &__hero {
       display: flex;
       justify-content: center;
+
+      .hero-txt {
+        margin-left: 0;
+      }
     }
   }
 }
